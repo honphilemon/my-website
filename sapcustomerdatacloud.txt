@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Application</title>
+    <script type="text/javascript" src="https://cdns.gigya.com/js/gigya.js?apiKey=YOUR_API_KEY"></script>
+    <script type="text/javascript">
+        gigya.accounts.init({
+            apiKey: '4_DMVOiIiB9YCsIO0gOawT9w',
+            siteName: '140804862120'
+        });
+
+        function showLogin() {
+            gigya.accounts.showScreenSet({
+                screenSet: 'Default-RegistrationLogin',
+                containerID: 'login-container'
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="login-container"></div>
+    <script type="text/javascript">
+        showLogin();
+    </script>
+</body>
+</html>
